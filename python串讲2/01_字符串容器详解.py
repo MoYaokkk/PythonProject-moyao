@@ -56,8 +56,8 @@ print("教" in text)
 print(text.index('教'))  # 从左往右
 print(text.rindex('教'))  # 从右往左
 # 注意: index和rindex弊端是如果查找的内容不存在就报错
-# print(text.index('武')) # 报错
-# print(text.rindex('武')) # 报错
+# print(test.index('武')) # 报错
+# print(test.rindex('武')) # 报错
 print(text.find('教'))   # 从左往右
 print(text.rfind('教'))   # 从右往左
 # 注意: find和rfind好处是如果查找的内容不存在就返回-1
