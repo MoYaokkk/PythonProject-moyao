@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 
 # 2.先认识空值
-print(None, type(None))
-print(np.nan, type(np.nan))
-print(pd.NA, type(pd.NA))
+print(None, type(None))     # 原生python中的空值
+print(np.nan, type(np.nan))     # numpy中的空值
+print(pd.NA, type(pd.NA))    # pandas中的空值
 
 # 3.空值判断操作
 # 注意: 一般pandas中使用isna(),notna()判断,而不使用==

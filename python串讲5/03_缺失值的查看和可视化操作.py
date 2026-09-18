@@ -31,8 +31,8 @@ print('=========================================')
 # 查看Survived各个值的个数
 result = train['Survived'].value_counts()
 print(result, type(result)) # Series
-# 可视化展示
-result.plot(kind = 'bar')
+# 可视化展示 条形图
+result.plot(kind = 'bar') # pandas对象直接可以调用plot,底层自动的集成了matplotlib的绘图功能
 plt.grid()
 # 展示
 plt.show()
