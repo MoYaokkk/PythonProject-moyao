@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsRegressor
 x_train = [[0],[1],[2],[3]]
 x_text = [[4]]
 # 在模拟标签数据y (房价0->70w,1->80w,2->100w,3->120w)
-y_train = [70,80,100,100]     # 标签再这里是个一维
+y_train = [70,80,100,100]     # 此时就是房价
 # TODO 3.需求: 预测x_test中的4属于垃圾邮件还是正常邮件
 # todo 3.1 创建回归模型
 knn_model = KNeighborsRegressor(n_neighbors=3)

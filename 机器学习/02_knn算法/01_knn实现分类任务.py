@@ -6,10 +6,11 @@ from sklearn.neighbors import KNeighborsClassifier
 x_train = [[0],[1],[2],[3]]
 x_text = [[4]]
 # 在模拟标签数据y (假设1:垃圾邮件,0:正常邮件)
-y_train = [0,0,0,1]     # 标签再这里是个一维
+y_train = [0,0,0,1]     # 此时0和1是标签索引
 # TODO 3.需求: 预测x_test中的4属于垃圾邮件还是正常邮件
 # todo 3.1 创建分类模型
-knn_model = KNeighborsClassifier(n_neighbors=3)     # 平票时按类别标签升序取靠前的,即 0。
+# 注意: 如果两个邻居,一个是垃圾,一个是正常邮件,底层根据标签索引选择小的
+knn_model = KNeighborsClassifier(n_neighbors=3)
 # todo 3.2 模型训练
 knn_model.fit(x_train,y_train)
 # todo 3.3 模型预测
